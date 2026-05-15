@@ -1,34 +1,144 @@
-body{
-    background-color: #050F2E;
-    
+.logo {
+  position: absolute;
+
+  left: 40px;
+  top: -15px;
+
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.0;
 }
 
-.comedia-section h3{
-    margin-top: 3px;
-    margin-bottom: 10px;
+.Nostalgia {
+  font-family: "Monoton", sans-serif;
+  color: #c0392b;
+  font-size: 52px;
+
+  text-shadow:
+    0 0 5px rgba(127, 219, 255, 0.5),
+    0 0 10px rgba(127, 219, 255, 0.4),
+    0 0 20px rgba(127, 219, 255, 0.3);
+}
+.Filmes {
+  font-size: 30px;
+
+  margin-left: 200px;
+  margin-top: -1px;
+
+  font-family: "Cinzel", sans-serif;
+  letter-spacing: 4px;
+  
+  color: #F0EDE8;
+}
+header {
+  display: flex;
+  flex-direction: column;
 }
 
-.comedia-section {
-    background-color: #020A1F;
-    padding: 20px;
-    font-size: 30px;
-    font-family: "Bebas Neue", sans-serif;
-    color: white;
-    border-radius: 20px;
-    
+.topo {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: #1e2a3a;
+
+  padding: 05px 25px;
+
+  height: 60px;
 }
 
-.carrossel{
-    display: flex;
-    gap: 15px;
-    overflow: x;
-    padding-bottom: 20px;
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  width: 100%;
+  margin: 30px;
 }
 
-.carrossel img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    
+form input {
+  width: 500px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: #f0ede8;
+  font-size: 15px;
+
+  color: #1a1a2e;
+}
+
+form button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-color: #c0392b;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #2d3748;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  color: #c0392b;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  background-color: #050f2e;
+  margin: 0;
+}
+
+.comedia-section h3,
+.acao-section h3 {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.comedia-section,
+.acao-section {
+  background-color: #020a1f;
+  padding: 25px;
+
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #f0ede8;
+
+  border-radius: 20px;
+
+  margin: 25px 20px;
+}
+
+.carrossel {
+  display: flex;
+  gap: 15px;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.carrossel img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }

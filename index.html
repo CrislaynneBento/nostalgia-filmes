@@ -9,21 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header> 
+        <div class="topo">
+            <h1 class="logo">
+                <span class="Nostalgia">Nostalgia</span>
+                <span class="Filmes">Filmes</span> 
+            </h1>
+            <nav class="nav">
+                <ul>
+                    <ol>Filmes</ol>
+                    <ol>Séries</ol>
+                    <ol>Novidades</ol>
+                    <ol>Lançamentos</ol>
+                    <ol>Sugestões</ol>
+                </ul>
+            </nav>
+        </div>
+        
+        
         <form method="GET" action="/buscar">
             <input type="text" name="busca" placeholder="O que gostaria de assistir ?" required>
             <button type="submit">Buscar</button>
         </form>
-        <nav>
-            <ul>
-                <li>Filmes</li>
-                <li>Séries</li>
-                <li>Novidades</li>
-                <li>Lançamentos</li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section class="comedia-section">
@@ -38,6 +50,21 @@
                 <img src="/comedia/forrest_gump.webp" alt="Forrest Gump">
                 <img src="/comedia/superbad.webp" alt="Superbad: é hoje">
                 <img src="/comedia/ted.webp" alt="Ted">
+            </div>
+        </section>
+
+        <section class="acao-section">
+            <h3>Ação</h3>
+            <div class="carrossel">
+                <img src="/acao/a_hora_do_acerto.webp" alt="A hora do acerto">
+                <img src="/acao/Batman.webp" alt="Batman">
+                <img src="/acao/corra_que_a_policia_vem_ai.jpg" alt="Corra que a policia vem aí">
+                <img src="/acao/guerra_mundial_z.webp" alt="Guerra mundial Z">
+                <img src="/acao/o_ano_mais_violento.webp" alt="O ano mais violento">
+                <img src="/acao/o_beijo_do_dragao.webp" alt="O beijo do dragão">
+                <img src="/acao/constantine.webp" alt="constantine">
+                <img src="/acao/tron_ares.webp" alt="Tron: Ares">
+                <img src="acao/coracoes_de_ferro.webp" alt="Corações de Ferro">
             </div>
         </section>
     </main>
