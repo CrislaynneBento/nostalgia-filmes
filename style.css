@@ -1,13 +1,18 @@
+body {
+  background-color: #050f2e;
+  margin: 0;
+}
+
 .logo {
-  position: absolute;
-
-  left: 40px;
-  top: -15px;
-
   display: flex;
-  flex-direction: column;
 
-  line-height: 1.0;
+  flex-direction: row;
+
+  align-items: baseline;
+
+  gap: 8px;
+
+  line-height: 1;
 }
 
 .Nostalgia {
@@ -15,22 +20,23 @@
   color: #c0392b;
   font-size: 52px;
 
-  text-shadow:
-    0 0 5px rgba(127, 219, 255, 0.5),
-    0 0 10px rgba(127, 219, 255, 0.4),
-    0 0 20px rgba(127, 219, 255, 0.3);
+  background: linear-gradient(135deg, #c0392b, #e67e22);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  filter: drop-shadow(0 0 8px rgba(192, 57, 43, 0.5));
 }
+
 .Filmes {
   font-size: 30px;
 
-  margin-left: 200px;
-  margin-top: -1px;
-
   font-family: "Cinzel", sans-serif;
   letter-spacing: 4px;
-  
-  color: #F0EDE8;
+  margin: 0;
+
+  color: #f0ede8;
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -41,10 +47,10 @@ header {
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 
-  background-color: #1e2a3a;
-
+  background-color: #231f1b;
+  border-bottom: 3px solid #c0392b;
   padding: 05px 25px;
 
   height: 60px;
@@ -54,9 +60,6 @@ form {
   display: flex;
   gap: 10px;
   justify-content: center;
-
-  width: 100%;
-  margin: 30px;
 }
 
 form input {
@@ -92,37 +95,66 @@ form button:hover {
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 8px;
 
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  color: #c0392b;
   font-size: 20px;
+
   font-family: "Bebas Neue", sans-serif;
 }
 
-body {
-  background-color: #050f2e;
-  margin: 0;
+nav ul li a {
+  color: #f0ede8;
+  text-decoration: none;
+
+  font-size: 17px;
+  padding: 6px 14px;
+  border-radius: 6px 6px 0 0;
+  letter-spacing: 1px;
+  display: block;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(192, 57, 43, 0.15);
+  color: #f0ede8;
+}
+
+nav ul li a.active {
+  color: #f0ede8;
+  background: rgba(192, 57, 43, 0.2);
+  border-bottom: 2px solid #c0392b;
 }
 
 .comedia-section h3,
-.acao-section h3 {
+.acao-section h3,
+.drama-section h3,
+.ficcao_cientifica-section h3,
+.terror-section h3,
+.romance-section h3 {
   margin-top: 3px;
   margin-bottom: 10px;
 }
 
 .comedia-section,
-.acao-section {
+.acao-section,
+.drama-section,
+.ficcao_cientifica-section,
+.terror-section,
+.romance-section {
   background-color: #020a1f;
   padding: 25px;
 
   font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
-  color: #f0ede8;
+  color: #F0EDE8;
+  border-left: 4px solid #C0392B;
 
   border-radius: 20px;
 
@@ -136,9 +168,103 @@ body {
   padding-bottom: 20px;
 }
 
-.carrossel img {
-  width: 200px;
-  height: 300px;
+.carrossel::-webkit-scrollbar {
+  height: 4px;
+}
+.carrossel::-webkit-scrollbar-track {
+  background: #231F1B;
+}
+.carrossel::-webkit-scrollbar-thumb {
+  background: #C0392B;
+  border-radius: 4px;
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 280px;
+}
+
+.card-img{
+  width: 180px;
+  flex-shrink: 0;
   object-fit: cover;
   border-radius: 10px;
+  transition: border-radius 0.3s;
+}
+
+.card:hover .card-img {
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+  width: 0;
+  overflow: hidden;
+  background: #231F1B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  transition: width 0.35s ease, padding 0.35s ease;
+  border-radius: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+.card:hover .card-info {
+  width: 200px;
+  padding: 16px 18px;
+}
+
+.card-info .titulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #F0EDE8;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  white-space: normal;
+}
+
+.card-info .meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.card-info .badge {
+  font-size: 15px;
+  color: #A09890;
+  background: #2C2416;
+  border-radius: 4px;
+  padding: 2px 7px;
+}
+
+.card-info .desc {
+  font-size: 15px;
+  color: #8a8078;
+  line-height: 1.5;
+  white-space: normal;
+}
+
+.card-info .btn {
+  margin-top: 14px;
+  padding: 8px 0;
+  background: #C0392B;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-info .btn:hover {
+  background: #e67e22;
+  transition: background 0.2s;
 }
