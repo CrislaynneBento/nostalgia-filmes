@@ -34,7 +34,7 @@ body {
   font-family: "Cinzel", sans-serif;
   letter-spacing: 4px;
   margin: 0;
-  padding-right: 0; /* removido o 250px fixo */
+  padding-right: 0; 
   color: #f0ede8;
 }
 
@@ -48,7 +48,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo esquerda, nav centro, ícone direita */
+  justify-content: space-between; 
   background-color: #231f1b;
   border-bottom: 3px solid #c0392b;
   padding: 5px 25px;
@@ -326,10 +326,6 @@ footer {
   font-family: sans-serif;
 }
 
-/* ══════════════════════════════════════
-   SIDEBAR E OVERLAY — fora do media query
-   para funcionar em qualquer tamanho
-══════════════════════════════════════ */
 
 .sidebar {
   position: fixed;
@@ -423,9 +419,7 @@ footer {
   display: block;
 }
 
-/* ══════════════════════════════════════
-   RESPONSIVO — Mobile (max-width: 768px)
-══════════════════════════════════════ */
+
 
 @media (max-width: 768px) {
   .topo {
