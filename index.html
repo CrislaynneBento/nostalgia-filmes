@@ -3,22 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nostalgia Filmes</title>
+    <meta name="description" content="Assista filmes clássicos e modernos no Nostalgia Filmes." />
+    <title>Nostalgia Filmes — Clássicos e Modernos</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
     <link rel="icon" href="movie.png" type="image/png" />
   </head>
 
@@ -30,6 +22,16 @@
           <span class="Filmes">Filmes</span>
         </h1>
 
+        <div class="topo-icons">
+          <button class="sanduiche" aria-label="Abrir menu" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+          </button>
+        </div>
+
         <nav>
           <ul>
             <li><a href="/filmes" class="active">Filmes</a></li>
@@ -39,47 +41,54 @@
             <li><a href="/sugestoes">Sugestões</a></li>
           </ul>
         </nav>
-
-        <div class="profile-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-            />
-          </svg>
-        </div>
       </div>
 
       <form method="GET" action="/buscar">
-        <input
-          type="text"
-          name="busca"
-          placeholder="O que gostaria de assistir?"
-          required
-        />
+        <input type="text" name="busca" placeholder="O que gostaria de assistir?" required />
         <button type="submit">Buscar</button>
       </form>
     </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <button class="sidebar-close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="sidebar-profile">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </svg>
+        <span>Meu Perfil</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="/filmes">Filmes</a></li>
+          <li><a href="/series">Séries</a></li>
+          <li><a href="/novidades">Novidades</a></li>
+          <li><a href="/lancamentos">Lançamentos</a></li>
+          <li><a href="/sugestoes">Sugestões</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
     <div class="container-total">
       <main>
         <!-- ═══════════════════════════════════════════ COMÉDIA -->
         <section class="comedia-section">
-          <h3>Comédia</h3>
+          <h2>Comédia</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/todo_poderoso.jpg"
-                alt="Todo poderoso"
-              />
+              <img class="card-img" src="/comedia/todo_poderoso.jpg" alt="Todo poderoso" />
               <div class="card-info">
                 <div class="titulo">Todo poderoso</div>
                 <div class="meta">
@@ -87,43 +96,25 @@
                   <span class="badge">1 h 41 min</span>
                   <span class="badge">Dir: Tom Shadyac</span>
                 </div>
-                <div class="desc">
-                  Um indivíduo que se queixa de Deus muitas vezes recebe poderes
-                  poderosos para ensinar-lhe como é difícil administrar o mundo.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um indivíduo que se queixa de Deus muitas vezes recebe poderes poderosos para ensinar-lhe como é difícil administrar o mundo.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/O_primeiro_mentiroso.jpg"
-                alt="O primeiro mentiroso"
-              />
+              <img class="card-img" src="/comedia/O_primeiro_mentiroso.jpg" alt="O primeiro mentiroso" />
               <div class="card-info">
                 <div class="titulo">O primeiro mentiroso</div>
                 <div class="meta">
                   <span class="badge">2009</span>
                   <span class="badge">1h 40min</span>
-                  <span class="badge"
-                    >Dir: Ricky Gervais, Matthew Robinson</span
-                  >
+                  <span class="badge">Dir: Ricky Gervais, Matthew Robinson</span>
                 </div>
-                <div class="desc">
-                  Situado em um mundo onde ninguém mentiu até que um escritor
-                  aproveita a oportunidade para obter ganhos pessoais.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Situado em um mundo onde ninguém mentiu até que um escritor aproveita a oportunidade para obter ganhos pessoais.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/dumb_and_dumber.webp"
-                alt="Debi e Loide"
-              />
+              <img class="card-img" src="/comedia/dumb_and_dumber.webp" alt="Debi e Loide" />
               <div class="card-info">
                 <div class="titulo">Debi e Loide</div>
                 <div class="meta">
@@ -131,20 +122,12 @@
                   <span class="badge">1h 47min</span>
                   <span class="badge">Dir: Peter Farrelly</span>
                 </div>
-                <div class="desc">
-                  Dois amigos sem noção partem numa viagem insana para devolver
-                  uma mala à mulher dos sonhos de um deles.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Dois amigos sem noção partem numa viagem insana para devolver uma mala à mulher dos sonhos de um deles.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/american_pie.webp"
-                alt="American Pie"
-              />
+              <img class="card-img" src="/comedia/american_pie.webp" alt="American Pie" />
               <div class="card-info">
                 <div class="titulo">American Pie</div>
                 <div class="meta">
@@ -152,20 +135,12 @@
                   <span class="badge">1h 35min</span>
                   <span class="badge">Dir: Paul Weitz</span>
                 </div>
-                <div class="desc">
-                  Quatro amigos fazem um pacto para perder a virgindade antes do
-                  baile de formatura.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Quatro amigos fazem um pacto para perder a virgindade antes do baile de formatura.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/ferias_frustradas.webp"
-                alt="Férias Frustradas"
-              />
+              <img class="card-img" src="/comedia/ferias_frustradas.webp" alt="Férias Frustradas" />
               <div class="card-info">
                 <div class="titulo">Férias Frustradas</div>
                 <div class="meta">
@@ -173,21 +148,12 @@
                   <span class="badge">1h 38min</span>
                   <span class="badge">Dir: Harold Ramis</span>
                 </div>
-                <div class="desc">
-                  Um pai entusiasmado leva a família numa viagem de carro até um
-                  parque temático, com tudo dando terrivelmente errado pelo
-                  caminho.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um pai entusiasmado leva a família numa viagem de carro até um parque temático, com tudo dando terrivelmente errado pelo caminho.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/project_x.webp"
-                alt="Projeto X"
-              />
+              <img class="card-img" src="/comedia/project_x.webp" alt="Projeto X" />
               <div class="card-info">
                 <div class="titulo">Projeto X</div>
                 <div class="meta">
@@ -195,20 +161,12 @@
                   <span class="badge">1h 28min</span>
                   <span class="badge">Dir: Nima Nourizadeh</span>
                 </div>
-                <div class="desc">
-                  Três amigos organizam uma festa de aniversário que sai
-                  completamente do controle.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Três amigos organizam uma festa de aniversário que sai completamente do controle.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/se_beber_nao_case.webp"
-                alt="Se Beber, Não Case"
-              />
+              <img class="card-img" src="/comedia/se_beber_nao_case.webp" alt="Se Beber, Não Case" />
               <div class="card-info">
                 <div class="titulo">Se Beber, Não Case</div>
                 <div class="meta">
@@ -216,20 +174,12 @@
                   <span class="badge">1h 40min</span>
                   <span class="badge">Dir: Todd Phillips</span>
                 </div>
-                <div class="desc">
-                  Quatro amigos vão a Las Vegas para uma despedida de solteiro e
-                  acordam sem lembrar de nada — e sem o noivo.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Quatro amigos vão a Las Vegas para uma despedida de solteiro e acordam sem lembrar de nada — e sem o noivo.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/curtindo_a_vida_a_doidado.webp"
-                alt="Curtindo a Vida à Doidado"
-              />
+              <img class="card-img" src="/comedia/curtindo_a_vida_a_doidado.webp" alt="Curtindo a Vida à Doidado" />
               <div class="card-info">
                 <div class="titulo">Curtindo a Vida à Doidado</div>
                 <div class="meta">
@@ -237,20 +187,12 @@
                   <span class="badge">1h 43min</span>
                   <span class="badge">Dir: John Hughes</span>
                 </div>
-                <div class="desc">
-                  Ferris Bueller convence os amigos a matar aula e viver o dia
-                  mais épico de suas vidas em Chicago.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Ferris Bueller convence os amigos a matar aula e viver o dia mais épico de suas vidas em Chicago.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/forrest_gump.webp"
-                alt="Forrest Gump"
-              />
+              <img class="card-img" src="/comedia/forrest_gump.webp" alt="Forrest Gump" />
               <div class="card-info">
                 <div class="titulo">Forrest Gump</div>
                 <div class="meta">
@@ -258,20 +200,12 @@
                   <span class="badge">2h 22min</span>
                   <span class="badge">Dir: Robert Zemeckis</span>
                 </div>
-                <div class="desc">
-                  A vida extraordinária de um homem simples do Alabama que, sem
-                  querer, participa dos maiores momentos da história americana.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">A vida extraordinária de um homem simples do Alabama que, sem querer, participa dos maiores momentos da história americana.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/comedia/superbad.webp"
-                alt="Superbad"
-              />
+              <img class="card-img" src="/comedia/superbad.webp" alt="Superbad" />
               <div class="card-info">
                 <div class="titulo">Superbad</div>
                 <div class="meta">
@@ -279,14 +213,10 @@
                   <span class="badge">1h 53min</span>
                   <span class="badge">Dir: Greg Mottola</span>
                 </div>
-                <div class="desc">
-                  Dois melhores amigos prestes a se separar para a faculdade
-                  tentam aproveitar a última festa do colégio.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Dois melhores amigos prestes a se separar para a faculdade tentam aproveitar a última festa do colégio.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/comedia/ted.webp" alt="Ted" />
               <div class="card-info">
@@ -296,11 +226,8 @@
                   <span class="badge">1h 46min</span>
                   <span class="badge">Dir: Seth MacFarlane</span>
                 </div>
-                <div class="desc">
-                  Um homem adulto precisa lidar com o ursinho de pelúcia vivo e
-                  malcriado que foi seu melhor amigo desde a infância.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um homem adulto precisa lidar com o ursinho de pelúcia vivo e malcriado que foi seu melhor amigo desde a infância.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
@@ -308,57 +235,36 @@
 
         <!-- ═══════════════════════════════════════════ AÇÃO -->
         <section class="acao-section">
-          <h3>Ação</h3>
+          <h2>Ação</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/mad_max.jpg"
-                alt="Mad max: Estrada da fúria"
-              />
+              <img class="card-img" src="/acao/mad_max.jpg" alt="Mad max: Estrada da fúria" />
               <div class="card-info">
                 <div class="titulo">Mad Max: Estrada da fúria</div>
                 <div class="meta">
                   <span class="badge">2015</span>
-                  <span class="badge">2 h </span>
+                  <span class="badge">2h</span>
                   <span class="badge">Dir: George Miller</span>
                 </div>
-                <div class="desc">
-                  Em um mundo pós-apocalíptico, uma mulher se rebela contra um
-                  governante tirânico em busca de sua terra natal com a ajuda de
-                  um grupo de prisioneiras, um adorador psicótico e um nômade
-                  chamado Max.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Em um mundo pós-apocalíptico, uma mulher se rebela contra um governante tirânico em busca de sua terra natal.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/acao/matrix.webp" alt="Matrix" />
               <div class="card-info">
                 <div class="titulo">Matrix</div>
                 <div class="meta">
                   <span class="badge">1999</span>
-                  <span class="badge">2 h 16 min</span>
-                  <span class="badge"
-                    >Dir: Lana Wachowski, Lilly Wachowski</span
-                  >
+                  <span class="badge">2h 16min</span>
+                  <span class="badge">Dir: Lana Wachowski, Lilly Wachowski</span>
                 </div>
-                <div class="desc">
-                  Um hacker aprende com os misteriosos rebeldes sobre a
-                  verdadeira natureza de sua realidade e seu papel na guerra
-                  contra seus controladores.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/a_hora_do_acerto.webp"
-                alt="A Hora do Acerto"
-              />
+              <img class="card-img" src="/acao/a_hora_do_acerto.webp" alt="A Hora do Acerto" />
               <div class="card-info">
                 <div class="titulo">A Hora do Acerto</div>
                 <div class="meta">
@@ -366,15 +272,10 @@
                   <span class="badge">1h 41min</span>
                   <span class="badge">Dir: Antoine Fuqua</span>
                 </div>
-                <div class="desc">
-                  Um homem misterioso com um passado perigoso sai da
-                  aposentadoria para ajudar uma jovem explorada pelo crime
-                  organizado.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um homem misterioso com um passado perigoso sai da aposentadoria para ajudar uma jovem explorada pelo crime organizado.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/acao/Batman.webp" alt="Batman" />
               <div class="card-info">
@@ -384,20 +285,12 @@
                   <span class="badge">2h 6min</span>
                   <span class="badge">Dir: Tim Burton</span>
                 </div>
-                <div class="desc">
-                  O vigilante mascarado de Gotham City enfrenta o criminoso
-                  psicótico conhecido como Coringa.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">O vigilante mascarado de Gotham City enfrenta o criminoso psicótico conhecido como Coringa.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/corra_que_a_policia_vem_ai.jpg"
-                alt="Corra que a Polícia Vem Aí"
-              />
+              <img class="card-img" src="/acao/corra_que_a_policia_vem_ai.jpg" alt="Corra que a Polícia Vem Aí" />
               <div class="card-info">
                 <div class="titulo">Corra que a Polícia Vem Aí</div>
                 <div class="meta">
@@ -405,20 +298,12 @@
                   <span class="badge">1h 25min</span>
                   <span class="badge">Dir: David Zucker</span>
                 </div>
-                <div class="desc">
-                  O detetive Frank Drebin investiga um complô de assassinato
-                  enquanto provoca caos em cada passo da investigação.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">O detetive Frank Drebin investiga um complô de assassinato enquanto provoca caos em cada passo da investigação.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/guerra_mundial_z.webp"
-                alt="Guerra Mundial Z"
-              />
+              <img class="card-img" src="/acao/guerra_mundial_z.webp" alt="Guerra Mundial Z" />
               <div class="card-info">
                 <div class="titulo">Guerra Mundial Z</div>
                 <div class="meta">
@@ -426,20 +311,12 @@
                   <span class="badge">1h 56min</span>
                   <span class="badge">Dir: Marc Forster</span>
                 </div>
-                <div class="desc">
-                  Um ex-agente da ONU viaja pelo mundo tentando parar uma
-                  pandemia zumbi que ameaça destruir a humanidade.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um ex-agente da ONU viaja pelo mundo tentando parar uma pandemia zumbi que ameaça destruir a humanidade.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/o_ano_mais_violento.webp"
-                alt="O Ano Mais Violento"
-              />
+              <img class="card-img" src="/acao/o_ano_mais_violento.webp" alt="O Ano Mais Violento" />
               <div class="card-info">
                 <div class="titulo">O Ano Mais Violento</div>
                 <div class="meta">
@@ -447,20 +324,12 @@
                   <span class="badge">2h 5min</span>
                   <span class="badge">Dir: J.C. Chandor</span>
                 </div>
-                <div class="desc">
-                  Em 1981, um empresário em ascensão tenta expandir seu negócio
-                  enquanto lida com corrupção e violência ao seu redor.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Em 1981, um empresário em ascensão tenta expandir seu negócio enquanto lida com corrupção e violência ao seu redor.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/o_beijo_do_dragao.webp"
-                alt="O Beijo do Dragão"
-              />
+              <img class="card-img" src="/acao/o_beijo_do_dragao.webp" alt="O Beijo do Dragão" />
               <div class="card-info">
                 <div class="titulo">O Beijo do Dragão</div>
                 <div class="meta">
@@ -468,20 +337,12 @@
                   <span class="badge">1h 38min</span>
                   <span class="badge">Dir: Chris Nahon</span>
                 </div>
-                <div class="desc">
-                  Um agente especial chinês vai a Paris combater um traficante
-                  corrupto e acaba protegendo uma jovem americana.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um agente especial chinês vai a Paris combater um traficante corrupto e acaba protegendo uma jovem americana.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/constantine.webp"
-                alt="Constantine"
-              />
+              <img class="card-img" src="/acao/constantine.webp" alt="Constantine" />
               <div class="card-info">
                 <div class="titulo">Constantine</div>
                 <div class="meta">
@@ -489,42 +350,25 @@
                   <span class="badge">2h 1min</span>
                   <span class="badge">Dir: Francis Lawrence</span>
                 </div>
-                <div class="desc">
-                  Um exorcista que pode ver anjos e demônios tenta encontrar
-                  redenção enquanto investiga o suicídio misterioso de uma
-                  mulher.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um exorcista que pode ver anjos e demônios tenta encontrar redenção enquanto investiga o suicídio misterioso de uma mulher.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/tron_ares.webp"
-                alt="Tron: Ares"
-              />
+              <img class="card-img" src="/acao/tron_ares.webp" alt="Tron: Ares" />
               <div class="card-info">
                 <div class="titulo">Tron: Ares</div>
                 <div class="meta">
                   <span class="badge">2025</span>
-                  <span class="badge">2h 0min</span>
+                  <span class="badge">2h</span>
                   <span class="badge">Dir: Joachim Rønning</span>
                 </div>
-                <div class="desc">
-                  Um programa altamente avançado do Grid é enviado ao mundo real
-                  em uma missão que vai mudar os dois universos para sempre.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um programa altamente avançado do Grid é enviado ao mundo real em uma missão que vai mudar os dois universos para sempre.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/acao/coracoes_de_ferro.webp"
-                alt="Corações de Ferro"
-              />
+              <img class="card-img" src="/acao/coracoes_de_ferro.webp" alt="Corações de Ferro" />
               <div class="card-info">
                 <div class="titulo">Corações de Ferro</div>
                 <div class="meta">
@@ -532,11 +376,8 @@
                   <span class="badge">2h 14min</span>
                   <span class="badge">Dir: David Ayer</span>
                 </div>
-                <div class="desc">
-                  Em abril de 1945, uma tripulação de tanque americana enfrenta
-                  missões suicidas enquanto avança pela Alemanha nazista.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Em abril de 1945, uma tripulação de tanque americana enfrenta missões suicidas enquanto avança pela Alemanha nazista.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
@@ -544,14 +385,10 @@
 
         <!-- ═══════════════════════════════════════════ DRAMA -->
         <section class="drama-section">
-          <h3>Drama</h3>
+          <h2>Drama</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/a_espera_de_um_milagre.webp"
-                alt="À Espera de um Milagre"
-              />
+              <img class="card-img" src="/drama/a_espera_de_um_milagre.webp" alt="À Espera de um Milagre" />
               <div class="card-info">
                 <div class="titulo">À Espera de um Milagre</div>
                 <div class="meta">
@@ -559,20 +396,12 @@
                   <span class="badge">3h 9min</span>
                   <span class="badge">Dir: Frank Darabont</span>
                 </div>
-                <div class="desc">
-                  As vidas dos guardas do corredor da morte são transformadas
-                  por um detento com um dom misterioso e inexplicável.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">As vidas dos guardas do corredor da morte são transformadas por um detento com um dom misterioso e inexplicável.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/a_lista_de_schindler's.webp"
-                alt="A Lista de Schindler"
-              />
+              <img class="card-img" src="/drama/a_lista_de_schindler's.webp" alt="A Lista de Schindler" />
               <div class="card-info">
                 <div class="titulo">A Lista de Schindler</div>
                 <div class="meta">
@@ -580,21 +409,12 @@
                   <span class="badge">3h 15min</span>
                   <span class="badge">Dir: Steven Spielberg</span>
                 </div>
-                <div class="desc">
-                  Na Polônia ocupada pelos nazistas, o industrial Oskar
-                  Schindler arrisca tudo para salvar centenas de judeus do
-                  extermínio.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Na Polônia ocupada pelos nazistas, o industrial Oskar Schindler arrisca tudo para salvar centenas de judeus do extermínio.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/a_vida_e_bela.webp"
-                alt="A Vida é Bela"
-              />
+              <img class="card-img" src="/drama/a_vida_e_bela.webp" alt="A Vida é Bela" />
               <div class="card-info">
                 <div class="titulo">A Vida é Bela</div>
                 <div class="meta">
@@ -602,20 +422,12 @@
                   <span class="badge">1h 56min</span>
                   <span class="badge">Dir: Roberto Benigni</span>
                 </div>
-                <div class="desc">
-                  Um pai judeu usa humor e imaginação para proteger o filho da
-                  brutal realidade de um campo de concentração nazista.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um pai judeu usa humor e imaginação para proteger o filho da brutal realidade de um campo de concentração nazista.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/ainda_estou_aqui.webp"
-                alt="Ainda Estou Aqui"
-              />
+              <img class="card-img" src="/drama/ainda_estou_aqui.webp" alt="Ainda Estou Aqui" />
               <div class="card-info">
                 <div class="titulo">Ainda Estou Aqui</div>
                 <div class="meta">
@@ -623,21 +435,12 @@
                   <span class="badge">2h 17min</span>
                   <span class="badge">Dir: Walter Salles</span>
                 </div>
-                <div class="desc">
-                  Durante a ditadura militar brasileira, uma mulher é obrigada a
-                  se reinventar após um ato violento e arbitrário destruir sua
-                  família.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Durante a ditadura militar brasileira, uma mulher é obrigada a se reinventar após um ato violento e arbitrário destruir sua família.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/efeito_borboleta.webp"
-                alt="Efeito Borboleta"
-              />
+              <img class="card-img" src="/drama/efeito_borboleta.webp" alt="Efeito Borboleta" />
               <div class="card-info">
                 <div class="titulo">Efeito Borboleta</div>
                 <div class="meta">
@@ -645,15 +448,10 @@
                   <span class="badge">1h 53min</span>
                   <span class="badge">Dir: Eric Bress</span>
                 </div>
-                <div class="desc">
-                  Evan descobre que pode voltar no tempo ao ler seu diário, mas
-                  cada mudança no passado gera consequências imprevisíveis no
-                  presente.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Evan descobre que pode voltar no tempo ao ler seu diário, mas cada mudança no passado gera consequências imprevisíveis no presente.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/drama/ela.webp" alt="Ela" />
               <div class="card-info">
@@ -663,21 +461,12 @@
                   <span class="badge">2h 6min</span>
                   <span class="badge">Dir: Spike Jonze</span>
                 </div>
-                <div class="desc">
-                  Num futuro próximo, um escritor solitário desenvolve um
-                  relacionamento amoroso com uma inteligência artificial de voz
-                  feminina.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Num futuro próximo, um escritor solitário desenvolve um relacionamento amoroso com uma inteligência artificial de voz feminina.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/historias_cruzadas.webp"
-                alt="Histórias Cruzadas"
-              />
+              <img class="card-img" src="/drama/historias_cruzadas.webp" alt="Histórias Cruzadas" />
               <div class="card-info">
                 <div class="titulo">Histórias Cruzadas</div>
                 <div class="meta">
@@ -685,21 +474,12 @@
                   <span class="badge">2h 26min</span>
                   <span class="badge">Dir: Tate Taylor</span>
                 </div>
-                <div class="desc">
-                  Nos anos 60, uma jovem escritora decide contar as histórias
-                  das empregadas negras que trabalham para famílias brancas no
-                  Mississippi.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Nos anos 60, uma jovem escritora decide contar as histórias das empregadas negras que trabalham para famílias brancas no Mississippi.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/jogo_da_imitacao.webp"
-                alt="Jogo da Imitação"
-              />
+              <img class="card-img" src="/drama/jogo_da_imitacao.webp" alt="Jogo da Imitação" />
               <div class="card-info">
                 <div class="titulo">Jogo da Imitação</div>
                 <div class="meta">
@@ -707,21 +487,12 @@
                   <span class="badge">1h 54min</span>
                   <span class="badge">Dir: Morten Tyldum</span>
                 </div>
-                <div class="desc">
-                  Durante a Segunda Guerra Mundial, o matemático Alan Turing
-                  lidera uma equipe secreta para decifrar o código nazista
-                  Enigma.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Durante a Segunda Guerra Mundial, o matemático Alan Turing lidera uma equipe secreta para decifrar o código nazista Enigma.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/o_menino_de_pijama_listrado.webp"
-                alt="O Menino do Pijama Listrado"
-              />
+              <img class="card-img" src="/drama/o_menino_de_pijama_listrado.webp" alt="O Menino do Pijama Listrado" />
               <div class="card-info">
                 <div class="titulo">O Menino do Pijama Listrado</div>
                 <div class="meta">
@@ -729,21 +500,12 @@
                   <span class="badge">1h 34min</span>
                   <span class="badge">Dir: Mark Herman</span>
                 </div>
-                <div class="desc">
-                  O filho de um comandante nazista forma uma improvável amizade
-                  com um menino judeu através da cerca de um campo de
-                  concentração.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">O filho de um comandante nazista forma uma improvável amizade com um menino judeu através da cerca de um campo de concentração.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/o_pianista.webp"
-                alt="O Pianista"
-              />
+              <img class="card-img" src="/drama/o_pianista.webp" alt="O Pianista" />
               <div class="card-info">
                 <div class="titulo">O Pianista</div>
                 <div class="meta">
@@ -751,20 +513,12 @@
                   <span class="badge">2h 30min</span>
                   <span class="badge">Dir: Roman Polanski</span>
                 </div>
-                <div class="desc">
-                  Um pianista judeu polonês luta pela sobrevivência enquanto
-                  Varsóvia é destruída durante a Segunda Guerra Mundial.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um pianista judeu polonês luta pela sobrevivência enquanto Varsóvia é destruída durante a Segunda Guerra Mundial.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/drama/sempre_ao_seu_lado.webp"
-                alt="Sempre ao Seu Lado"
-              />
+              <img class="card-img" src="/drama/sempre_ao_seu_lado.webp" alt="Sempre ao Seu Lado" />
               <div class="card-info">
                 <div class="titulo">Sempre ao Seu Lado</div>
                 <div class="meta">
@@ -772,12 +526,8 @@
                   <span class="badge">1h 33min</span>
                   <span class="badge">Dir: Lasse Hallström</span>
                 </div>
-                <div class="desc">
-                  A história real de Hachiko, um cachorro que esperou fiel por
-                  seu dono na estação de trem por mais de nove anos após sua
-                  morte.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">A história real de Hachiko, um cachorro que esperou fiel por seu dono na estação de trem por mais de nove anos após sua morte.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
@@ -785,79 +535,49 @@
 
         <!-- ═══════════════════════════════════════════ FICÇÃO CIENTÍFICA -->
         <section class="ficcao_cientifica-section">
-          <h3>Ficção Científica</h3>
+          <h2>Ficção Científica</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/uma_odisseia_no_espaco.jpg"
-                alt="Uma odisseia no espaço"
-              />
+              <img class="card-img" src="/ficcao_cientifica/uma_odisseia_no_espaco.jpg" alt="Uma odisseia no espaço" />
               <div class="card-info">
                 <div class="titulo">Uma odisseia no espaço</div>
                 <div class="meta">
                   <span class="badge">1968</span>
-                  <span class="badge">2 h 29 min</span>
+                  <span class="badge">2h 29min</span>
                   <span class="badge">Dir: Stanley Kubrick</span>
                 </div>
-                <div class="desc">
-                  Trás descobrir um misterioso artefato na superfície da Lua, a
-                  humanidade tenta encontrar seus origens com a ajuda da
-                  inteligença do ordernador HAL 9000.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Após descobrir um misterioso artefato na Lua, a humanidade tenta encontrar suas origens com a ajuda do computador HAL 9000.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/solaris.jpg"
-                alt="Solaris"
-              />
+              <img class="card-img" src="/ficcao_cientifica/solaris.jpg" alt="Solaris" />
               <div class="card-info">
                 <div class="titulo">Solaris</div>
                 <div class="meta">
                   <span class="badge">1972</span>
-                  <span class="badge">2 h 47 min</span>
+                  <span class="badge">2h 47min</span>
                   <span class="badge">Dir: Andrei Tarkovsky</span>
                 </div>
-                <div class="desc">
-                  Um psicólogo é enviado a uma estação na órbita de um planeta
-                  distante para descobrir o que levou sua tripulação à loucura.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um psicólogo é enviado a uma estação na órbita de um planeta distante para descobrir o que levou sua tripulação à loucura.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/inimigo_meu.jpg"
-                alt="Inimigo meu"
-              />
+              <img class="card-img" src="/ficcao_cientifica/inimigo_meu.jpg" alt="Inimigo meu" />
               <div class="card-info">
                 <div class="titulo">Inimigo meu</div>
                 <div class="meta">
                   <span class="badge">1985</span>
-                  <span class="badge">1 h 48 min</span>
+                  <span class="badge">1h 48min</span>
                   <span class="badge">Dir: Wolfgang Petersen</span>
                 </div>
-                <div class="desc">
-                  Um piloto humano e um piloto alienígena, inimigos de guerra,
-                  ficam presos juntos num planeta hostil e precisam cooperar
-                  para sobreviver.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um piloto humano e um piloto alienígena, inimigos de guerra, ficam presos juntos num planeta hostil e precisam cooperar para sobreviver.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/de_volta_para_o_futuro.webp"
-                alt="De Volta Para o Futuro"
-              />
+              <img class="card-img" src="/ficcao_cientifica/de_volta_para_o_futuro.webp" alt="De Volta Para o Futuro" />
               <div class="card-info">
                 <div class="titulo">De Volta Para o Futuro</div>
                 <div class="meta">
@@ -865,21 +585,12 @@
                   <span class="badge">1h 56min</span>
                   <span class="badge">Dir: Robert Zemeckis</span>
                 </div>
-                <div class="desc">
-                  Marty McFly viaja acidentalmente para 1955 e precisa garantir
-                  que seus pais se apaixonem para não apagar sua própria
-                  existência.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Marty McFly viaja acidentalmente para 1955 e precisa garantir que seus pais se apaixonem para não apagar sua própria existência.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/devoradores_de_estrelas.webp"
-                alt="Devoradores de Estrelas"
-              />
+              <img class="card-img" src="/ficcao_cientifica/devoradores_de_estrelas.webp" alt="Devoradores de Estrelas" />
               <div class="card-info">
                 <div class="titulo">Devoradores de Estrelas</div>
                 <div class="meta">
@@ -887,20 +598,12 @@
                   <span class="badge">2h 36min</span>
                   <span class="badge">Dir: Phil Lord</span>
                 </div>
-                <div class="desc">
-                  Um astronauta tenta salvar a Terra enquanto está completamente
-                  sozinho no espaço sideral.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um astronauta tenta salvar a Terra enquanto está completamente sozinho no espaço sideral.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/distrito_9.webp"
-                alt="Distrito 9"
-              />
+              <img class="card-img" src="/ficcao_cientifica/distrito_9.webp" alt="Distrito 9" />
               <div class="card-info">
                 <div class="titulo">Distrito 9</div>
                 <div class="meta">
@@ -908,21 +611,12 @@
                   <span class="badge">1h 52min</span>
                   <span class="badge">Dir: Neill Blomkamp</span>
                 </div>
-                <div class="desc">
-                  Extraterrestres forçados a viver em condições precárias na
-                  Terra encontram um agente do governo exposto à sua
-                  biotecnologia.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Extraterrestres forçados a viver em condições precárias na Terra encontram um agente do governo exposto à sua biotecnologia.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/independence_day.webp"
-                alt="Independence Day"
-              />
+              <img class="card-img" src="/ficcao_cientifica/independence_day.webp" alt="Independence Day" />
               <div class="card-info">
                 <div class="titulo">Independence Day</div>
                 <div class="meta">
@@ -930,20 +624,12 @@
                   <span class="badge">2h 25min</span>
                   <span class="badge">Dir: Roland Emmerich</span>
                 </div>
-                <div class="desc">
-                  Quando alienígenas chegam para destruir a Terra, a humanidade
-                  une forças numa batalha épica pela sobrevivência.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Quando alienígenas chegam para destruir a Terra, a humanidade une forças numa batalha épica pela sobrevivência.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/planeta_dos_macacos.webp"
-                alt="Planeta dos Macacos"
-              />
+              <img class="card-img" src="/ficcao_cientifica/planeta_dos_macacos.webp" alt="Planeta dos Macacos" />
               <div class="card-info">
                 <div class="titulo">Planeta dos Macacos</div>
                 <div class="meta">
@@ -951,20 +637,12 @@
                   <span class="badge">1h 45min</span>
                   <span class="badge">Dir: Rupert Wyatt</span>
                 </div>
-                <div class="desc">
-                  Um experimento científico dá ao chimpanzé César inteligência
-                  humana, desencadeando uma revolução entre os primatas.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um experimento científico dá ao chimpanzé César inteligência humana, desencadeando uma revolução entre os primatas.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/prometheus.webp"
-                alt="Prometheus"
-              />
+              <img class="card-img" src="/ficcao_cientifica/prometheus.webp" alt="Prometheus" />
               <div class="card-info">
                 <div class="titulo">Prometheus</div>
                 <div class="meta">
@@ -972,21 +650,12 @@
                   <span class="badge">2h 4min</span>
                   <span class="badge">Dir: Ridley Scott</span>
                 </div>
-                <div class="desc">
-                  Uma equipe de exploradores segue pistas sobre a origem da
-                  humanidade até uma lua distante, onde encontra algo
-                  aterrorizante.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma equipe de exploradores segue pistas sobre a origem da humanidade até uma lua distante, onde encontra algo aterrorizante.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/sinais.jpg"
-                alt="Sinais"
-              />
+              <img class="card-img" src="/ficcao_cientifica/sinais.jpg" alt="Sinais" />
               <div class="card-info">
                 <div class="titulo">Sinais</div>
                 <div class="meta">
@@ -994,20 +663,12 @@
                   <span class="badge">1h 46min</span>
                   <span class="badge">Dir: M. Night Shyamalan</span>
                 </div>
-                <div class="desc">
-                  Uma família que vive numa fazenda encontra misteriosos
-                  círculos nas plantações, sugerindo algo muito mais assustador.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma família que vive numa fazenda encontra misteriosos círculos nas plantações, sugerindo algo muito mais assustador.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/ficcao_cientifica/a_mosca.webp"
-                alt="A Mosca"
-              />
+              <img class="card-img" src="/ficcao_cientifica/a_mosca.webp" alt="A Mosca" />
               <div class="card-info">
                 <div class="titulo">A Mosca</div>
                 <div class="meta">
@@ -1015,11 +676,8 @@
                   <span class="badge">1h 36min</span>
                   <span class="badge">Dir: David Cronenberg</span>
                 </div>
-                <div class="desc">
-                  Um cientista começa a se transformar num ser grotesco após um
-                  experimento de teletransporte dar terrivelmente errado.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um cientista começa a se transformar num ser grotesco após um experimento de teletransporte dar terrivelmente errado.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
@@ -1027,14 +685,10 @@
 
         <!-- ═══════════════════════════════════════════ TERROR -->
         <section class="terror-section">
-          <h3>Terror</h3>
+          <h2>Terror</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/invocacao_do_mal.webp"
-                alt="Invocação do Mal"
-              />
+              <img class="card-img" src="/terror/invocacao_do_mal.webp" alt="Invocação do Mal" />
               <div class="card-info">
                 <div class="titulo">Invocação do Mal</div>
                 <div class="meta">
@@ -1042,20 +696,12 @@
                   <span class="badge">1h 52min</span>
                   <span class="badge">Dir: James Wan</span>
                 </div>
-                <div class="desc">
-                  Os investigadores paranormais Ed e Lorraine Warren ajudam uma
-                  família aterrorizada por uma presença sombria em sua casa.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Os investigadores paranormais Ed e Lorraine Warren ajudam uma família aterrorizada por uma presença sombria em sua casa.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/o_bebe_de_rosemary.jpg"
-                alt="O Bebê de Rosemary"
-              />
+              <img class="card-img" src="/terror/o_bebe_de_rosemary.jpg" alt="O Bebê de Rosemary" />
               <div class="card-info">
                 <div class="titulo">O Bebê de Rosemary</div>
                 <div class="meta">
@@ -1063,20 +709,12 @@
                   <span class="badge">2h 17min</span>
                   <span class="badge">Dir: Roman Polanski</span>
                 </div>
-                <div class="desc">
-                  Uma jovem grávida começa a suspeitar que seus vizinhos têm
-                  planos sinistros para o seu filho ainda por nascer.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma jovem grávida começa a suspeitar que seus vizinhos têm planos sinistros para o seu filho ainda por nascer.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/o_enigma_de_outro_mundo.jpg"
-                alt="O Enigma de Outro Mundo"
-              />
+              <img class="card-img" src="/terror/o_enigma_de_outro_mundo.jpg" alt="O Enigma de Outro Mundo" />
               <div class="card-info">
                 <div class="titulo">O Enigma de Outro Mundo</div>
                 <div class="meta">
@@ -1084,20 +722,12 @@
                   <span class="badge">1h 49min</span>
                   <span class="badge">Dir: John Carpenter</span>
                 </div>
-                <div class="desc">
-                  Uma equipe de pesquisa na Antártica é caçada por um alienígena
-                  que assume a aparência de qualquer ser vivo que absorve.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma equipe de pesquisa na Antártica é caçada por um alienígena que assume a aparência de qualquer ser vivo que absorve.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/o_exorcista.webp"
-                alt="O Exorcista"
-              />
+              <img class="card-img" src="/terror/o_exorcista.webp" alt="O Exorcista" />
               <div class="card-info">
                 <div class="titulo">O Exorcista</div>
                 <div class="meta">
@@ -1105,20 +735,12 @@
                   <span class="badge">2h 2min</span>
                   <span class="badge">Dir: William Friedkin</span>
                 </div>
-                <div class="desc">
-                  Quando uma adolescente é possuída por uma entidade demoníaca,
-                  sua mãe desesperada busca ajuda em dois padres católicos.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Quando uma adolescente é possuída por uma entidade demoníaca, sua mãe desesperada busca ajuda em dois padres católicos.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/o_iluminado.webp"
-                alt="O Iluminado"
-              />
+              <img class="card-img" src="/terror/o_iluminado.webp" alt="O Iluminado" />
               <div class="card-info">
                 <div class="titulo">O Iluminado</div>
                 <div class="meta">
@@ -1126,21 +748,12 @@
                   <span class="badge">2h 26min</span>
                   <span class="badge">Dir: Stanley Kubrick</span>
                 </div>
-                <div class="desc">
-                  Um escritor leva a família para tomar conta de um hotel
-                  isolado no inverno, onde forças sobrenaturais o levam à
-                  loucura.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um escritor leva a família para tomar conta de um hotel isolado no inverno, onde forças sobrenaturais o levam à loucura.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/o_massacre_da_serra_eletrica.jpg"
-                alt="O Massacre da Serra Elétrica"
-              />
+              <img class="card-img" src="/terror/o_massacre_da_serra_eletrica.jpg" alt="O Massacre da Serra Elétrica" />
               <div class="card-info">
                 <div class="titulo">O Massacre da Serra Elétrica</div>
                 <div class="meta">
@@ -1148,14 +761,10 @@
                   <span class="badge">1h 23min</span>
                   <span class="badge">Dir: Tobe Hooper</span>
                 </div>
-                <div class="desc">
-                  Um grupo de jovens viajando pelo interior do Texas cai nas
-                  garras de uma família de canibais perturbados.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um grupo de jovens viajando pelo interior do Texas cai nas garras de uma família de canibais perturbados.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/terror/psicose.webp" alt="Psicose" />
               <div class="card-info">
@@ -1165,14 +774,10 @@
                   <span class="badge">1h 49min</span>
                   <span class="badge">Dir: Alfred Hitchcock</span>
                 </div>
-                <div class="desc">
-                  Uma secretária em fuga para em um motel remoto gerido por um
-                  jovem perturbado dominado pela figura da mãe.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma secretária em fuga para em um motel remoto gerido por um jovem perturbado dominado pela figura da mãe.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
               <img class="card-img" src="/terror/tubarao.webp" alt="Tubarão" />
               <div class="card-info">
@@ -1182,78 +787,47 @@
                   <span class="badge">2h 4min</span>
                   <span class="badge">Dir: Steven Spielberg</span>
                 </div>
-                <div class="desc">
-                  Um xerife, um biólogo e um marinheiro se unem para caçar um
-                  enorme tubarão branco que aterroriza uma cidade praiana.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um xerife, um biólogo e um marinheiro se unem para caçar um enorme tubarão branco que aterroriza uma cidade praiana.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/sexta_feira_13.jpg"
-                alt="Sexta Feira 13"
-              />
+              <img class="card-img" src="/terror/sexta_feira_13.jpg" alt="Sexta Feira 13" />
               <div class="card-info">
                 <div class="titulo">Sexta Feira 13</div>
                 <div class="meta">
                   <span class="badge">1980</span>
-                  <span class="badge">1 h 35 min</span>
+                  <span class="badge">1h 35min</span>
                   <span class="badge">Dir: Sean S. Cunningham</span>
                 </div>
-                <div class="desc">
-                  O acampamento Crystal Lake está fechado há mais de 20 anos. O
-                  novo proprietário do acampamento e sete jovens conselheiros
-                  estão preparando a propriedade para reabertura, apesar dos
-                  avisos de uma "maldição" por parte dos residentes locais.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">O acampamento Crystal Lake está fechado há mais de 20 anos. Jovens conselheiros preparam a reabertura apesar dos avisos de uma maldição local.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/Brinquedo_assasino.jpg"
-                alt="Brinquedo Assasino"
-              />
+              <img class="card-img" src="/terror/Brinquedo_assasino.jpg" alt="Brinquedo Assassino" />
               <div class="card-info">
-                <div class="titulo">Brinquedo Assasino</div>
+                <div class="titulo">Brinquedo Assassino</div>
                 <div class="meta">
                   <span class="badge">1988</span>
-                  <span class="badge">1 h 27 min</span>
+                  <span class="badge">1h 27min</span>
                   <span class="badge">Dir: Tom Holland</span>
                 </div>
-                <div class="desc">
-                  Uma mãe solteira dá a seu filho o boneco mais desejado para o
-                  seu aniversário, mas eles descobrirão que ele é possuído pela
-                  alma de um assassino em série.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma mãe solteira dá ao filho o boneco mais desejado de aniversário, mas descobrirão que ele é possuído pela alma de um assassino em série.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/terror/Halloween_noite_de_massacre.webp"
-                alt="Halloween - A noite do terror"
-              />
+              <img class="card-img" src="/terror/Halloween_noite_de_massacre.webp" alt="Halloween - A noite do terror" />
               <div class="card-info">
                 <div class="titulo">Halloween - A noite do terror</div>
                 <div class="meta">
                   <span class="badge">1978</span>
-                  <span class="badge">1 h 31 min</span>
+                  <span class="badge">1h 31min</span>
                   <span class="badge">Dir: John Carpenter</span>
                 </div>
-                <div class="desc">
-                  Quinze anos depois de assassinar sua irmã na noite de
-                  Halloween em 1963, Michael Myers escapa do hospício e retorna
-                  para a pequena cidade de Haddonfield para matar novamente.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Quinze anos após assassinar sua irmã, Michael Myers escapa do hospício e retorna a Haddonfield para matar novamente.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
@@ -1261,14 +835,10 @@
 
         <!-- ═══════════════════════════════════════════ ROMANCE -->
         <section class="romance-section">
-          <h3>Romance</h3>
+          <h2>Romance</h2>
           <div class="carrossel">
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/amor_e_outras_drogas.webp"
-                alt="Amor e Outras Drogas"
-              />
+              <img class="card-img" src="/romance/amor_e_outras_drogas.webp" alt="Amor e Outras Drogas" />
               <div class="card-info">
                 <div class="titulo">Amor e Outras Drogas</div>
                 <div class="meta">
@@ -1276,20 +846,12 @@
                   <span class="badge">1h 52min</span>
                   <span class="badge">Dir: Edward Zwick</span>
                 </div>
-                <div class="desc">
-                  Um vendedor charmoso se apaixona por uma mulher com Parkinson,
-                  e os dois enfrentam juntos o desafio da doença.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um vendedor charmoso se apaixona por uma mulher com Parkinson, e os dois enfrentam juntos o desafio da doença.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/sr_e_sra_smith.jpg"
-                alt="Se e senhora Smith"
-              />
+              <img class="card-img" src="/romance/sr_e_sra_smith.jpg" alt="Sr. e Sra. Smith" />
               <div class="card-info">
                 <div class="titulo">Sr. e Sra. Smith</div>
                 <div class="meta">
@@ -1297,64 +859,38 @@
                   <span class="badge">2h</span>
                   <span class="badge">Dir: Doug Liman</span>
                 </div>
-                <div class="desc">
-                  Um casal fica surpreso ao saber que ambos são assassinos,
-                  contratados por agências inimigas, para matar uns aos outros.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um casal fica surpreso ao saber que ambos são assassinos contratados por agências inimigas para matar uns aos outros.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/uma_segunda_chance_para_amar.jpg"
-                alt="Uma segunda chance para amar."
-              />
+              <img class="card-img" src="/romance/uma_segunda_chance_para_amar.jpg" alt="Uma segunda chance para amar" />
               <div class="card-info">
                 <div class="titulo">Uma segunda chance para amar</div>
                 <div class="meta">
                   <span class="badge">2019</span>
-                  <span class="badge">1 h 43 min</span>
+                  <span class="badge">1h 43min</span>
                   <span class="badge">Dir: Paul Feig</span>
                 </div>
-                <div class="desc">
-                  Kate é uma jovem que adotou más decisões. Seu último encontro
-                  com o desastre foi ter concordado em trabalhar como elfo do
-                  Papai Noel para uma loja de departamentos. No entanto ela
-                  conhece Tom, lá sua vida toma um novo rumo.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Kate, uma jovem de más decisões, trabalha como elfo de Natal e conhece Tom, que muda completamente sua vida.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/10_coisas_que_eu_odeio_em_voce.webp"
-                alt="10 coisas que eu odeio em você"
-              />
+              <img class="card-img" src="/romance/10_coisas_que_eu_odeio_em_voce.webp" alt="10 coisas que eu odeio em você" />
               <div class="card-info">
                 <div class="titulo">10 coisas que eu odeio em você</div>
                 <div class="meta">
                   <span class="badge">1999</span>
-                  <span class="badge">1 h 37 min</span>
+                  <span class="badge">1h 37min</span>
                   <span class="badge">Dir: Gil Junger</span>
                 </div>
-                <div class="desc">
-                  Uma bela e popular adolescente não tem permissão para sair com
-                  um rapaz até que sua irmã rabugenta também o faça.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma bela e popular adolescente não tem permissão para sair com um rapaz até que sua irmã rabugenta também o faça.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/antes_do_adeus.webp"
-                alt="Antes do Adeus"
-              />
+              <img class="card-img" src="/romance/antes_do_adeus.webp" alt="Antes do Adeus" />
               <div class="card-info">
                 <div class="titulo">Antes do Adeus</div>
                 <div class="meta">
@@ -1362,20 +898,12 @@
                   <span class="badge">1h 35min</span>
                   <span class="badge">Dir: Mark Kassen</span>
                 </div>
-                <div class="desc">
-                  Dois estranhos presos em Manhattan à noite se tornam
-                  confidentes numa aventura inesperada que muda suas vidas.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Dois estranhos presos em Manhattan à noite se tornam confidentes numa aventura inesperada que muda suas vidas.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/como_eu_era_antes_de_voce.webp"
-                alt="Como Eu Era Antes de Você"
-              />
+              <img class="card-img" src="/romance/como_eu_era_antes_de_voce.webp" alt="Como Eu Era Antes de Você" />
               <div class="card-info">
                 <div class="titulo">Como Eu Era Antes de Você</div>
                 <div class="meta">
@@ -1383,20 +911,12 @@
                   <span class="badge">1h 50min</span>
                   <span class="badge">Dir: Thea Sharrock</span>
                 </div>
-                <div class="desc">
-                  Uma garota forma um vínculo improvável com um homem
-                  tetraplégico que ela cuida, transformando a vida dos dois.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Uma garota forma um vínculo improvável com um homem tetraplégico que ela cuida, transformando a vida dos dois.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/deixe_a_neve_cair.webp"
-                alt="Deixe a Neve Cair"
-              />
+              <img class="card-img" src="/romance/deixe_a_neve_cair.webp" alt="Deixe a Neve Cair" />
               <div class="card-info">
                 <div class="titulo">Deixe a Neve Cair</div>
                 <div class="meta">
@@ -1404,20 +924,12 @@
                   <span class="badge">1h 32min</span>
                   <span class="badge">Dir: Luke Snellin</span>
                 </div>
-                <div class="desc">
-                  Na véspera de Natal, uma tempestade de neve reúne um grupo de
-                  jovens numa pequena cidade, entrelaçando histórias de amor.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Na véspera de Natal, uma tempestade de neve reúne um grupo de jovens numa pequena cidade, entrelaçando histórias de amor.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/ela_e_demais_para_mim.webp"
-                alt="Ela é Demais Para Mim"
-              />
+              <img class="card-img" src="/romance/ela_e_demais_para_mim.webp" alt="Ela é Demais Para Mim" />
               <div class="card-info">
                 <div class="titulo">Ela é Demais Para Mim</div>
                 <div class="meta">
@@ -1425,20 +937,12 @@
                   <span class="badge">1h 44min</span>
                   <span class="badge">Dir: Jim Field Smith</span>
                 </div>
-                <div class="desc">
-                  Joe conhece a mulher perfeita, mas sua falta de confiança e a
-                  influência dos amigos começam a ameaçar o relacionamento.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Joe conhece a mulher perfeita, mas sua falta de confiança e a influência dos amigos começam a ameaçar o relacionamento.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/questao_de_tempo.webp"
-                alt="Questão de Tempo"
-              />
+              <img class="card-img" src="/romance/questao_de_tempo.webp" alt="Questão de Tempo" />
               <div class="card-info">
                 <div class="titulo">Questão de Tempo</div>
                 <div class="meta">
@@ -1446,21 +950,12 @@
                   <span class="badge">2h 3min</span>
                   <span class="badge">Dir: Richard Curtis</span>
                 </div>
-                <div class="desc">
-                  Ao completar 21 anos, um homem descobre que pode viajar no
-                  tempo e usa esse poder para encontrar o amor — com
-                  consequências inesperadas.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Ao completar 21 anos, um homem descobre que pode viajar no tempo e usa esse poder para encontrar o amor — com consequências inesperadas.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/tres_vezes_amor (6).webp"
-                alt="Três Vezes Amor"
-              />
+              <img class="card-img" src="/romance/tres_vezes_amor (6).webp" alt="Três Vezes Amor" />
               <div class="card-info">
                 <div class="titulo">Três Vezes Amor</div>
                 <div class="meta">
@@ -1468,20 +963,12 @@
                   <span class="badge">1h 52min</span>
                   <span class="badge">Dir: Adam Brooks</span>
                 </div>
-                <div class="desc">
-                  Um consultor político tenta explicar para sua filha os
-                  relacionamentos complicados que moldaram sua vida.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Um consultor político tenta explicar para sua filha os relacionamentos complicados que moldaram sua vida.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
-
             <div class="card">
-              <img
-                class="card-img"
-                src="/romance/simplismente_acontece.webp"
-                alt="Simplesmente Acontece"
-              />
+              <img class="card-img" src="/romance/simplismente_acontece.webp" alt="Simplesmente Acontece" />
               <div class="card-info">
                 <div class="titulo">Simplesmente Acontece</div>
                 <div class="meta">
@@ -1489,16 +976,14 @@
                   <span class="badge">1h 42min</span>
                   <span class="badge">Dir: Kelly Fremon Craig</span>
                 </div>
-                <div class="desc">
-                  Rose e Alex são melhores amigos desde sempre, mas quando o
-                  amor entra em cena, tudo entre eles começa a mudar.
-                </div>
-                <button class="btn">▶ Assistir</button>
+                <div class="desc">Rose e Alex são melhores amigos desde sempre, mas quando o amor entra em cena, tudo entre eles começa a mudar.</div>
+                <button type="button" class="btn">▶ Assistir</button>
               </div>
             </div>
           </div>
         </section>
       </main>
+
       <footer>
         <div class="footer-content">
           <nav class="footer-nav">
@@ -1510,5 +995,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

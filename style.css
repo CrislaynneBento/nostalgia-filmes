@@ -1,10 +1,8 @@
-.container-total{
-    width: 100%;
-    max-width: 1400px;
-
-    margin: 0 auto;
-
-    padding: 0;
+.container-total {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body {
@@ -18,17 +16,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-
   gap: 8px;
-
   line-height: 1;
 }
 
 .Nostalgia {
   font-family: "Monoton", sans-serif;
-  color: #c0392b;
   font-size: 52px;
-
   background: linear-gradient(135deg, #c0392b, #e67e22);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,11 +31,10 @@ body {
 
 .Filmes {
   font-size: 30px;
-
   font-family: "Cinzel", sans-serif;
   letter-spacing: 4px;
   margin: 0;
-  padding-right: 250px;
+  padding-right: 0; /* removido o 250px fixo */
   color: #f0ede8;
 }
 
@@ -53,74 +46,74 @@ header {
 
 .topo {
   position: relative;
-
-  display:  flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content: space-between; /* logo esquerda, nav centro, ícone direita */
   background-color: #231f1b;
   border-bottom: 3px solid #c0392b;
-  padding: 05px 25px;
-
+  padding: 5px 25px;
   height: 60px;
 }
 
-.profile-icon{
+.topo-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+/* ── Sanduíche: escondido no desktop ── */
+.sanduiche {
+  display: none;
+}
+
+.profile-icon {
   width: 35px;
   height: 35px;
-
   display: flex;
-  
   justify-content: flex-end;
-
   cursor: pointer;
   transition: 0.3s;
-
   color: #f0ede8;
-  
 }
-.profile-icon svg{
+
+.profile-icon svg {
   width: 32px;
   height: 32px;
 }
 
-.profile-icon:hover{
+.profile-icon:hover {
   color: #c0392b;
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 form {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
 }
 
 form input {
   width: 500px;
   padding: 12px;
-
   border: none;
   border-radius: 20px;
-
   background-color: #f0ede8;
   font-size: 15px;
-
   color: #1a1a2e;
 }
 
 form button {
-  padding: 12px 20px;
-
+  width: auto;
+  padding: 10px 24px;
+  align-self: center;
   border: none;
   border-radius: 30px;
-
   background-color: #c0392b;
   font-size: 15px;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
 
@@ -131,21 +124,15 @@ form button:hover {
 nav ul {
   display: flex;
   gap: 8px;
-
   margin: 0;
   padding-right: 20px;
-
   list-style: none;
-
-  font-size: 20px;
-
   font-family: "Bebas Neue", sans-serif;
 }
 
 nav ul li a {
   color: #f0ede8;
   text-decoration: none;
-
   font-size: 17px;
   padding: 6px 14px;
   border-radius: 6px 6px 0 0;
@@ -167,12 +154,12 @@ nav ul li a.active {
   border-bottom: 2px solid #c0392b;
 }
 
-.comedia-section h3,
-.acao-section h3,
-.drama-section h3,
-.ficcao_cientifica-section h3,
-.terror-section h3,
-.romance-section h3 {
+.comedia-section h2,
+.acao-section h2,
+.drama-section h2,
+.ficcao_cientifica-section h2,
+.terror-section h2,
+.romance-section h2 {
   margin-top: 3px;
   margin-bottom: 10px;
 }
@@ -185,16 +172,12 @@ nav ul li a.active {
 .romance-section {
   background-color: #020a1f;
   padding: 25px;
-
   font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
   color: #f0ede8;
-
   border-left: 4px solid #c0392b;
-
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-
   margin-left: 15px;
   margin-bottom: 30px;
 }
@@ -312,12 +295,9 @@ nav ul li a.active {
 
 footer {
   background-color: #020a1f;
-
   border-top: 3px solid #050f2e;
-
   padding: 30px 25px;
   margin-top: 40px;
-
   text-align: center;
 }
 
@@ -335,11 +315,228 @@ footer {
   text-decoration: none;
   letter-spacing: 1px;
 }
+
 .footer-nav a:hover {
   color: #f0ede8;
 }
+
 .footer-copy {
   font-size: 12px;
   color: #4a5568;
   font-family: sans-serif;
+}
+
+/* ══════════════════════════════════════
+   SIDEBAR E OVERLAY — fora do media query
+   para funcionar em qualquer tamanho
+══════════════════════════════════════ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 260px;
+  height: 100%;
+  background-color: #231f1b;
+  border-left: 3px solid #c0392b;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: right 0.3s ease;
+  box-sizing: border-box;
+}
+
+.sidebar.aberta {
+  right: 0;
+}
+
+.sidebar-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f0ede8;
+  align-self: flex-end;
+}
+
+.sidebar-close svg {
+  width: 28px;
+  height: 28px;
+}
+
+.sidebar-close:hover {
+  color: #c0392b;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #f0ede8;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid #c0392b;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-nav ul li a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  color: #f0ede8;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  display: block;
+  border-bottom: 1px solid #2c2416;
+  transition: color 0.2s;
+}
+
+.sidebar-nav ul li a:hover {
+  color: #c0392b;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.overlay.ativa {
+  display: block;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVO — Mobile (max-width: 768px)
+══════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: row;
+    height: 45px;
+    padding: 8px 16px;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .Nostalgia {
+    font-size: 28px;
+  }
+
+  .Filmes {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  /* nav some no mobile */
+  nav {
+    display: none;
+  }
+
+  /* sanduíche aparece no mobile */
+  .sanduiche {
+    display: flex;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    align-items: center;
+    color: #f0ede8;
+    transition: 0.3s;
+  }
+
+  .sanduiche svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sanduiche:hover {
+    color: #c0392b;
+    transform: scale(1.1);
+  }
+
+  .topo-icons {
+    margin-left: auto;
+    gap: 12px;
+  }
+
+  form {
+    flex-direction: row;
+    padding: 20px 16px;
+    align-items: center;
+  }
+
+  form input {
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    flex: 1;
+    width: auto;
+  }
+
+  form button {
+    width: 90%;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .comedia-section,
+  .acao-section,
+  .drama-section,
+  .ficcao_cientifica-section,
+  .terror-section,
+  .romance-section {
+    margin-left: 0;
+    border-radius: 0;
+    padding: 16px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .comedia-section h2,
+  .acao-section h2,
+  .drama-section h2,
+  .ficcao_cientifica-section h2,
+  .terror-section h2,
+  .romance-section h2 {
+    font-size: 18px;
+  }
+
+  .carrossel {
+    gap: 8px;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .card-img {
+    width: 130px;
+    border-radius: 10px;
+  }
+
+  .card-info {
+    display: none;
+  }
 }
