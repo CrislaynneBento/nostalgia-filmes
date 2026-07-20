@@ -1,0 +1,530 @@
+[
+  {
+    "titulo": "Todo poderoso",
+    "img": "/comedia/todo_poderoso.jpg",
+    "ano": "2003",
+    "duracao": "1 h 41 min",
+    "diretor": "Tom Shadyac",
+    "desc": "Um indivíduo que se queixa de Deus muitas vezes recebe poderes\n                  poderosos para ensinar-lhe como é difícil administrar o mundo."
+  },
+  {
+    "titulo": "O primeiro mentiroso",
+    "img": "/comedia/O_primeiro_mentiroso.jpg",
+    "ano": "2009",
+    "duracao": "1h 40min",
+    "diretor": "Ricky Gervais, Matthew Robinson",
+    "desc": "Situado em um mundo onde ninguém mentiu até que um escritor\n                  aproveita a oportunidade para obter ganhos pessoais."
+  },
+  {
+    "titulo": "Debi e Loide",
+    "img": "/comedia/dumb_and_dumber.webp",
+    "ano": "1994",
+    "duracao": "1h 47min",
+    "diretor": "Peter Farrelly",
+    "desc": "Dois amigos sem noção partem numa viagem insana para devolver\n                  uma mala à mulher dos sonhos de um deles."
+  },
+  {
+    "titulo": "American Pie",
+    "img": "/comedia/american_pie.webp",
+    "ano": "1999",
+    "duracao": "1h 35min",
+    "diretor": "Paul Weitz",
+    "desc": "Quatro amigos fazem um pacto para perder a virgindade antes do\n                  baile de formatura."
+  },
+  {
+    "titulo": "Férias Frustradas",
+    "img": "/comedia/ferias_frustradas.webp",
+    "ano": "1983",
+    "duracao": "1h 38min",
+    "diretor": "Harold Ramis",
+    "desc": "Um pai entusiasmado leva a família numa viagem de carro até um\n                  parque temático, com tudo dando terrivelmente errado pelo\n                  caminho."
+  },
+  {
+    "titulo": "Projeto X",
+    "img": "/comedia/project_x.webp",
+    "ano": "2012",
+    "duracao": "1h 28min",
+    "diretor": "Nima Nourizadeh",
+    "desc": "Três amigos organizam uma festa de aniversário que sai\n                  completamente do controle."
+  },
+  {
+    "titulo": "Se Beber, Não Case",
+    "img": "/comedia/se_beber_nao_case.webp",
+    "ano": "2009",
+    "duracao": "1h 40min",
+    "diretor": "Todd Phillips",
+    "desc": "Quatro amigos vão a Las Vegas para uma despedida de solteiro e\n                  acordam sem lembrar de nada — e sem o noivo."
+  },
+  {
+    "titulo": "Curtindo a Vida à Doidado",
+    "img": "/comedia/curtindo_a_vida_a_doidado.webp",
+    "ano": "1986",
+    "duracao": "1h 43min",
+    "diretor": "John Hughes",
+    "desc": "Ferris Bueller convence os amigos a matar aula e viver o dia\n                  mais épico de suas vidas em Chicago."
+  },
+  {
+    "titulo": "Forrest Gump",
+    "img": "/comedia/forrest_gump.webp",
+    "ano": "1994",
+    "duracao": "2h 22min",
+    "diretor": "Robert Zemeckis",
+    "desc": "A vida extraordinária de um homem simples do Alabama que, sem\n                  querer, participa dos maiores momentos da história americana."
+  },
+  {
+    "titulo": "Superbad",
+    "img": "/comedia/superbad.webp",
+    "ano": "2007",
+    "duracao": "1h 53min",
+    "diretor": "Greg Mottola",
+    "desc": "Dois melhores amigos prestes a se separar para a faculdade\n                  tentam aproveitar a última festa do colégio."
+  },
+  {
+    "titulo": "Ted",
+    "img": "/comedia/ted.webp",
+    "ano": "2012",
+    "duracao": "1h 46min",
+    "diretor": "Seth MacFarlane",
+    "desc": "Um homem adulto precisa lidar com o ursinho de pelúcia vivo e\n                  malcriado que foi seu melhor amigo desde a infância."
+  },
+  {
+    "titulo": "Mad Max: Estrada da fúria",
+    "img": "/acao/mad_max.jpg",
+    "ano": "2015",
+    "duracao": "2h",
+    "diretor": "George Miller",
+    "desc": "Em um mundo pós-apocalíptico, uma mulher se rebela contra um\n                  governante tirânico em busca de sua terra natal."
+  },
+  {
+    "titulo": "Matrix",
+    "img": "/acao/matrix.webp",
+    "ano": "1999",
+    "duracao": "2h 16min",
+    "diretor": "Lana Wachowski, Lilly Wachowski",
+    "desc": "Um hacker aprende com os misteriosos rebeldes sobre a\n                  verdadeira natureza de sua realidade."
+  },
+  {
+    "titulo": "A Hora do Acerto",
+    "img": "/acao/a_hora_do_acerto.webp",
+    "ano": "2014",
+    "duracao": "1h 41min",
+    "diretor": "Antoine Fuqua",
+    "desc": "Um homem misterioso com um passado perigoso sai da\n                  aposentadoria para ajudar uma jovem explorada pelo crime\n                  organizado."
+  },
+  {
+    "titulo": "Batman",
+    "img": "/acao/Batman.webp",
+    "ano": "1989",
+    "duracao": "2h 6min",
+    "diretor": "Tim Burton",
+    "desc": "O vigilante mascarado de Gotham City enfrenta o criminoso\n                  psicótico conhecido como Coringa."
+  },
+  {
+    "titulo": "Corra que a Polícia Vem Aí",
+    "img": "/acao/corra_que_a_policia_vem_ai.jpg",
+    "ano": "1988",
+    "duracao": "1h 25min",
+    "diretor": "David Zucker",
+    "desc": "O detetive Frank Drebin investiga um complô de assassinato\n                  enquanto provoca caos em cada passo da investigação."
+  },
+  {
+    "titulo": "Guerra Mundial Z",
+    "img": "/acao/guerra_mundial_z.webp",
+    "ano": "2013",
+    "duracao": "1h 56min",
+    "diretor": "Marc Forster",
+    "desc": "Um ex-agente da ONU viaja pelo mundo tentando parar uma\n                  pandemia zumbi que ameaça destruir a humanidade."
+  },
+  {
+    "titulo": "O Ano Mais Violento",
+    "img": "/acao/o_ano_mais_violento.webp",
+    "ano": "2014",
+    "duracao": "2h 5min",
+    "diretor": "J.C. Chandor",
+    "desc": "Em 1981, um empresário em ascensão tenta expandir seu negócio\n                  enquanto lida com corrupção e violência ao seu redor."
+  },
+  {
+    "titulo": "O Beijo do Dragão",
+    "img": "/acao/o_beijo_do_dragao.webp",
+    "ano": "2001",
+    "duracao": "1h 38min",
+    "diretor": "Chris Nahon",
+    "desc": "Um agente especial chinês vai a Paris combater um traficante\n                  corrupto e acaba protegendo uma jovem americana."
+  },
+  {
+    "titulo": "Constantine",
+    "img": "/acao/constantine.webp",
+    "ano": "2005",
+    "duracao": "2h 1min",
+    "diretor": "Francis Lawrence",
+    "desc": "Um exorcista que pode ver anjos e demônios tenta encontrar\n                  redenção enquanto investiga o suicídio misterioso de uma\n                  mulher."
+  },
+  {
+    "titulo": "Tron: Ares",
+    "img": "/acao/tron_ares.webp",
+    "ano": "2025",
+    "duracao": "2h",
+    "diretor": "Joachim Rønning",
+    "desc": "Um programa altamente avançado do Grid é enviado ao mundo real\n                  em uma missão que vai mudar os dois universos para sempre."
+  },
+  {
+    "titulo": "Corações de Ferro",
+    "img": "/acao/coracoes_de_ferro.webp",
+    "ano": "2014",
+    "duracao": "2h 14min",
+    "diretor": "David Ayer",
+    "desc": "Em abril de 1945, uma tripulação de tanque americana enfrenta\n                  missões suicidas enquanto avança pela Alemanha nazista."
+  },
+  {
+    "titulo": "À Espera de um Milagre",
+    "img": "/drama/a_espera_de_um_milagre.webp",
+    "ano": "1999",
+    "duracao": "3h 9min",
+    "diretor": "Frank Darabont",
+    "desc": "As vidas dos guardas do corredor da morte são transformadas\n                  por um detento com um dom misterioso e inexplicável."
+  },
+  {
+    "titulo": "A Lista de Schindler",
+    "img": "/drama/a_lista_de_schindler's.webp",
+    "ano": "1993",
+    "duracao": "3h 15min",
+    "diretor": "Steven Spielberg",
+    "desc": "Na Polônia ocupada pelos nazistas, o industrial Oskar\n                  Schindler arrisca tudo para salvar centenas de judeus do\n                  extermínio."
+  },
+  {
+    "titulo": "A Vida é Bela",
+    "img": "/drama/a_vida_e_bela.webp",
+    "ano": "1997",
+    "duracao": "1h 56min",
+    "diretor": "Roberto Benigni",
+    "desc": "Um pai judeu usa humor e imaginação para proteger o filho da\n                  brutal realidade de um campo de concentração nazista."
+  },
+  {
+    "titulo": "Ainda Estou Aqui",
+    "img": "/drama/ainda_estou_aqui.webp",
+    "ano": "2024",
+    "duracao": "2h 17min",
+    "diretor": "Walter Salles",
+    "desc": "Durante a ditadura militar brasileira, uma mulher é obrigada a\n                  se reinventar após um ato violento e arbitrário destruir sua\n                  família."
+  },
+  {
+    "titulo": "Efeito Borboleta",
+    "img": "/drama/efeito_borboleta.webp",
+    "ano": "2004",
+    "duracao": "1h 53min",
+    "diretor": "Eric Bress",
+    "desc": "Evan descobre que pode voltar no tempo ao ler seu diário, mas\n                  cada mudança no passado gera consequências imprevisíveis no\n                  presente."
+  },
+  {
+    "titulo": "Ela",
+    "img": "/drama/ela.webp",
+    "ano": "2013",
+    "duracao": "2h 6min",
+    "diretor": "Spike Jonze",
+    "desc": "Num futuro próximo, um escritor solitário desenvolve um\n                  relacionamento amoroso com uma inteligência artificial de voz\n                  feminina."
+  },
+  {
+    "titulo": "Histórias Cruzadas",
+    "img": "/drama/historias_cruzadas.webp",
+    "ano": "2011",
+    "duracao": "2h 26min",
+    "diretor": "Tate Taylor",
+    "desc": "Nos anos 60, uma jovem escritora decide contar as histórias\n                  das empregadas negras que trabalham para famílias brancas no\n                  Mississippi."
+  },
+  {
+    "titulo": "Jogo da Imitação",
+    "img": "/drama/jogo_da_imitacao.webp",
+    "ano": "2014",
+    "duracao": "1h 54min",
+    "diretor": "Morten Tyldum",
+    "desc": "Durante a Segunda Guerra Mundial, o matemático Alan Turing\n                  lidera uma equipe secreta para decifrar o código nazista\n                  Enigma."
+  },
+  {
+    "titulo": "O Menino do Pijama Listrado",
+    "img": "/drama/o_menino_de_pijama_listrado.webp",
+    "ano": "2008",
+    "duracao": "1h 34min",
+    "diretor": "Mark Herman",
+    "desc": "O filho de um comandante nazista forma uma improvável amizade\n                  com um menino judeu através da cerca de um campo de\n                  concentração."
+  },
+  {
+    "titulo": "O Pianista",
+    "img": "/drama/o_pianista.webp",
+    "ano": "2002",
+    "duracao": "2h 30min",
+    "diretor": "Roman Polanski",
+    "desc": "Um pianista judeu polonês luta pela sobrevivência enquanto\n                  Varsóvia é destruída durante a Segunda Guerra Mundial."
+  },
+  {
+    "titulo": "Sempre ao Seu Lado",
+    "img": "/drama/sempre_ao_seu_lado.webp",
+    "ano": "2009",
+    "duracao": "1h 33min",
+    "diretor": "Lasse Hallström",
+    "desc": "A história real de Hachiko, um cachorro que esperou fiel por\n                  seu dono na estação de trem por mais de nove anos após sua\n                  morte."
+  },
+  {
+    "titulo": "Uma odisseia no espaço",
+    "img": "/ficcao_cientifica/uma_odisseia_no_espaco.jpg",
+    "ano": "1968",
+    "duracao": "2h 29min",
+    "diretor": "Stanley Kubrick",
+    "desc": "Após descobrir um misterioso artefato na Lua, a humanidade\n                  tenta encontrar suas origens com a ajuda do computador HAL\n                  9000."
+  },
+  {
+    "titulo": "Solaris",
+    "img": "/ficcao_cientifica/solaris.jpg",
+    "ano": "1972",
+    "duracao": "2h 47min",
+    "diretor": "Andrei Tarkovsky",
+    "desc": "Um psicólogo é enviado a uma estação na órbita de um planeta\n                  distante para descobrir o que levou sua tripulação à loucura."
+  },
+  {
+    "titulo": "Inimigo meu",
+    "img": "/ficcao_cientifica/inimigo_meu.jpg",
+    "ano": "1985",
+    "duracao": "1h 48min",
+    "diretor": "Wolfgang Petersen",
+    "desc": "Um piloto humano e um piloto alienígena, inimigos de guerra,\n                  ficam presos juntos num planeta hostil e precisam cooperar\n                  para sobreviver."
+  },
+  {
+    "titulo": "De Volta Para o Futuro",
+    "img": "/ficcao_cientifica/de_volta_para_o_futuro.webp",
+    "ano": "1985",
+    "duracao": "1h 56min",
+    "diretor": "Robert Zemeckis",
+    "desc": "Marty McFly viaja acidentalmente para 1955 e precisa garantir\n                  que seus pais se apaixonem para não apagar sua própria\n                  existência."
+  },
+  {
+    "titulo": "Devoradores de Estrelas",
+    "img": "/ficcao_cientifica/devoradores_de_estrelas.webp",
+    "ano": "2026",
+    "duracao": "2h 36min",
+    "diretor": "Phil Lord",
+    "desc": "Um astronauta tenta salvar a Terra enquanto está completamente\n                  sozinho no espaço sideral."
+  },
+  {
+    "titulo": "Distrito 9",
+    "img": "/ficcao_cientifica/distrito_9.webp",
+    "ano": "2009",
+    "duracao": "1h 52min",
+    "diretor": "Neill Blomkamp",
+    "desc": "Extraterrestres forçados a viver em condições precárias na\n                  Terra encontram um agente do governo exposto à sua\n                  biotecnologia."
+  },
+  {
+    "titulo": "Independence Day",
+    "img": "/ficcao_cientifica/independence_day.webp",
+    "ano": "1996",
+    "duracao": "2h 25min",
+    "diretor": "Roland Emmerich",
+    "desc": "Quando alienígenas chegam para destruir a Terra, a humanidade\n                  une forças numa batalha épica pela sobrevivência."
+  },
+  {
+    "titulo": "Planeta dos Macacos",
+    "img": "/ficcao_cientifica/planeta_dos_macacos.webp",
+    "ano": "2011",
+    "duracao": "1h 45min",
+    "diretor": "Rupert Wyatt",
+    "desc": "Um experimento científico dá ao chimpanzé César inteligência\n                  humana, desencadeando uma revolução entre os primatas."
+  },
+  {
+    "titulo": "Prometheus",
+    "img": "/ficcao_cientifica/prometheus.webp",
+    "ano": "2012",
+    "duracao": "2h 4min",
+    "diretor": "Ridley Scott",
+    "desc": "Uma equipe de exploradores segue pistas sobre a origem da\n                  humanidade até uma lua distante, onde encontra algo\n                  aterrorizante."
+  },
+  {
+    "titulo": "Sinais",
+    "img": "/ficcao_cientifica/sinais.jpg",
+    "ano": "2002",
+    "duracao": "1h 46min",
+    "diretor": "M. Night Shyamalan",
+    "desc": "Uma família que vive numa fazenda encontra misteriosos\n                  círculos nas plantações, sugerindo algo muito mais assustador."
+  },
+  {
+    "titulo": "A Mosca",
+    "img": "/ficcao_cientifica/a_mosca.webp",
+    "ano": "1986",
+    "duracao": "1h 36min",
+    "diretor": "David Cronenberg",
+    "desc": "Um cientista começa a se transformar num ser grotesco após um\n                  experimento de teletransporte dar terrivelmente errado."
+  },
+  {
+    "titulo": "Invocação do Mal",
+    "img": "/terror/invocacao_do_mal.webp",
+    "ano": "2013",
+    "duracao": "1h 52min",
+    "diretor": "James Wan",
+    "desc": "Os investigadores paranormais Ed e Lorraine Warren ajudam uma\n                  família aterrorizada por uma presença sombria em sua casa."
+  },
+  {
+    "titulo": "O Bebê de Rosemary",
+    "img": "/terror/o_bebe_de_rosemary.jpg",
+    "ano": "1968",
+    "duracao": "2h 17min",
+    "diretor": "Roman Polanski",
+    "desc": "Uma jovem grávida começa a suspeitar que seus vizinhos têm\n                  planos sinistros para o seu filho ainda por nascer."
+  },
+  {
+    "titulo": "O Enigma de Outro Mundo",
+    "img": "/terror/o_enigma_de_outro_mundo.jpg",
+    "ano": "1982",
+    "duracao": "1h 49min",
+    "diretor": "John Carpenter",
+    "desc": "Uma equipe de pesquisa na Antártica é caçada por um alienígena\n                  que assume a aparência de qualquer ser vivo que absorve."
+  },
+  {
+    "titulo": "O Exorcista",
+    "img": "/terror/o_exorcista.webp",
+    "ano": "1973",
+    "duracao": "2h 2min",
+    "diretor": "William Friedkin",
+    "desc": "Quando uma adolescente é possuída por uma entidade demoníaca,\n                  sua mãe desesperada busca ajuda em dois padres católicos."
+  },
+  {
+    "titulo": "O Iluminado",
+    "img": "/terror/o_iluminado.webp",
+    "ano": "1980",
+    "duracao": "2h 26min",
+    "diretor": "Stanley Kubrick",
+    "desc": "Um escritor leva a família para tomar conta de um hotel\n                  isolado no inverno, onde forças sobrenaturais o levam à\n                  loucura."
+  },
+  {
+    "titulo": "O Massacre da Serra Elétrica",
+    "img": "/terror/o_massacre_da_serra_eletrica.jpg",
+    "ano": "1974",
+    "duracao": "1h 23min",
+    "diretor": "Tobe Hooper",
+    "desc": "Um grupo de jovens viajando pelo interior do Texas cai nas\n                  garras de uma família de canibais perturbados."
+  },
+  {
+    "titulo": "Psicose",
+    "img": "/terror/psicose.webp",
+    "ano": "1960",
+    "duracao": "1h 49min",
+    "diretor": "Alfred Hitchcock",
+    "desc": "Uma secretária em fuga para em um motel remoto gerido por um\n                  jovem perturbado dominado pela figura da mãe."
+  },
+  {
+    "titulo": "Tubarão",
+    "img": "/terror/tubarao.webp",
+    "ano": "1975",
+    "duracao": "2h 4min",
+    "diretor": "Steven Spielberg",
+    "desc": "Um xerife, um biólogo e um marinheiro se unem para caçar um\n                  enorme tubarão branco que aterroriza uma cidade praiana."
+  },
+  {
+    "titulo": "Sexta Feira 13",
+    "img": "/terror/sexta_feira_13.jpg",
+    "ano": "1980",
+    "duracao": "1h 35min",
+    "diretor": "Sean S. Cunningham",
+    "desc": "O acampamento Crystal Lake está fechado há mais de 20 anos.\n                  Jovens conselheiros preparam a reabertura apesar dos avisos de\n                  uma maldição local."
+  },
+  {
+    "titulo": "Brinquedo Assassino",
+    "img": "/terror/Brinquedo_assasino.jpg",
+    "ano": "1988",
+    "duracao": "1h 27min",
+    "diretor": "Tom Holland",
+    "desc": "Uma mãe solteira dá ao filho o boneco mais desejado de\n                  aniversário, mas descobrirão que ele é possuído pela alma de\n                  um assassino em série."
+  },
+  {
+    "titulo": "Halloween - A noite do terror",
+    "img": "/terror/Halloween_noite_de_massacre.webp",
+    "ano": "1978",
+    "duracao": "1h 31min",
+    "diretor": "John Carpenter",
+    "desc": "Quinze anos após assassinar sua irmã, Michael Myers escapa do\n                  hospício e retorna a Haddonfield para matar novamente."
+  },
+  {
+    "titulo": "Amor e Outras Drogas",
+    "img": "/romance/amor_e_outras_drogas.webp",
+    "ano": "2010",
+    "duracao": "1h 52min",
+    "diretor": "Edward Zwick",
+    "desc": "Um vendedor charmoso se apaixona por uma mulher com Parkinson,\n                  e os dois enfrentam juntos o desafio da doença."
+  },
+  {
+    "titulo": "Sr. e Sra. Smith",
+    "img": "/romance/sr_e_sra_smith.jpg",
+    "ano": "2005",
+    "duracao": "2h",
+    "diretor": "Doug Liman",
+    "desc": "Um casal fica surpreso ao saber que ambos são assassinos\n                  contratados por agências inimigas para matar uns aos outros."
+  },
+  {
+    "titulo": "Uma segunda chance para amar",
+    "img": "/romance/uma_segunda_chance_para_amar.jpg",
+    "ano": "2019",
+    "duracao": "1h 43min",
+    "diretor": "Paul Feig",
+    "desc": "Kate, uma jovem de más decisões, trabalha como elfo de Natal e\n                  conhece Tom, que muda completamente sua vida."
+  },
+  {
+    "titulo": "10 coisas que eu odeio em você",
+    "img": "/romance/10_coisas_que_eu_odeio_em_voce.webp",
+    "ano": "1999",
+    "duracao": "1h 37min",
+    "diretor": "Gil Junger",
+    "desc": "Uma bela e popular adolescente não tem permissão para sair com\n                  um rapaz até que sua irmã rabugenta também o faça."
+  },
+  {
+    "titulo": "Antes do Adeus",
+    "img": "/romance/antes_do_adeus.webp",
+    "ano": "2014",
+    "duracao": "1h 35min",
+    "diretor": "Mark Kassen",
+    "desc": "Dois estranhos presos em Manhattan à noite se tornam\n                  confidentes numa aventura inesperada que muda suas vidas."
+  },
+  {
+    "titulo": "Como Eu Era Antes de Você",
+    "img": "/romance/como_eu_era_antes_de_voce.webp",
+    "ano": "2016",
+    "duracao": "1h 50min",
+    "diretor": "Thea Sharrock",
+    "desc": "Uma garota forma um vínculo improvável com um homem\n                  tetraplégico que ela cuida, transformando a vida dos dois."
+  },
+  {
+    "titulo": "Deixe a Neve Cair",
+    "img": "/romance/deixe_a_neve_cair.webp",
+    "ano": "2019",
+    "duracao": "1h 32min",
+    "diretor": "Luke Snellin",
+    "desc": "Na véspera de Natal, uma tempestade de neve reúne um grupo de\n                  jovens numa pequena cidade, entrelaçando histórias de amor."
+  },
+  {
+    "titulo": "Ela é Demais Para Mim",
+    "img": "/romance/ela_e_demais_para_mim.webp",
+    "ano": "2010",
+    "duracao": "1h 44min",
+    "diretor": "Jim Field Smith",
+    "desc": "Joe conhece a mulher perfeita, mas sua falta de confiança e a\n                  influência dos amigos começam a ameaçar o relacionamento."
+  },
+  {
+    "titulo": "Questão de Tempo",
+    "img": "/romance/questao_de_tempo.webp",
+    "ano": "2013",
+    "duracao": "2h 3min",
+    "diretor": "Richard Curtis",
+    "desc": "Ao completar 21 anos, um homem descobre que pode viajar no\n                  tempo e usa esse poder para encontrar o amor — com\n                  consequências inesperadas."
+  },
+  {
+    "titulo": "Três Vezes Amor",
+    "img": "/romance/tres_vezes_amor (6).webp",
+    "ano": "2008",
+    "duracao": "1h 52min",
+    "diretor": "Adam Brooks",
+    "desc": "Um consultor político tenta explicar para sua filha os\n                  relacionamentos complicados que moldaram sua vida."
+  },
+  {
+    "titulo": "Simplesmente Acontece",
+    "img": "/romance/simplismente_acontece.webp",
+    "ano": "2014",
+    "duracao": "1h 42min",
+    "diretor": "Kelly Fremon Craig",
+    "desc": "Rose e Alex são melhores amigos desde sempre, mas quando o\n                  amor entra em cena, tudo entre eles começa a mudar."
+  }
+]
